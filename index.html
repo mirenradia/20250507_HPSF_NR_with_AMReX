@@ -438,7 +438,363 @@
 </script>
 <style type="text/css">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style>
 <style type="text/css">.tippy-box[data-theme~=light-border]{background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,8,16,.15);color:#333;box-shadow:0 4px 14px -2px rgba(0,8,16,.08)}.tippy-box[data-theme~=light-border]>.tippy-backdrop{background-color:#fff}.tippy-box[data-theme~=light-border]>.tippy-arrow:after,.tippy-box[data-theme~=light-border]>.tippy-svg-arrow:after{content:"";position:absolute;z-index:-1}.tippy-box[data-theme~=light-border]>.tippy-arrow:after{border-color:transparent;border-style:solid}.tippy-box[data-theme~=light-border][data-placement^=top]>.tippy-arrow:before{border-top-color:#fff}.tippy-box[data-theme~=light-border][data-placement^=top]>.tippy-arrow:after{border-top-color:rgba(0,8,16,.2);border-width:7px 7px 0;top:17px;left:1px}.tippy-box[data-theme~=light-border][data-placement^=top]>.tippy-svg-arrow>svg{top:16px}.tippy-box[data-theme~=light-border][data-placement^=top]>.tippy-svg-arrow:after{top:17px}.tippy-box[data-theme~=light-border][data-placement^=bottom]>.tippy-arrow:before{border-bottom-color:#fff;bottom:16px}.tippy-box[data-theme~=light-border][data-placement^=bottom]>.tippy-arrow:after{border-bottom-color:rgba(0,8,16,.2);border-width:0 7px 7px;bottom:17px;left:1px}.tippy-box[data-theme~=light-border][data-placement^=bottom]>.tippy-svg-arrow>svg{bottom:16px}.tippy-box[data-theme~=light-border][data-placement^=bottom]>.tippy-svg-arrow:after{bottom:17px}.tippy-box[data-theme~=light-border][data-placement^=left]>.tippy-arrow:before{border-left-color:#fff}.tippy-box[data-theme~=light-border][data-placement^=left]>.tippy-arrow:after{border-left-color:rgba(0,8,16,.2);border-width:7px 0 7px 7px;left:17px;top:1px}.tippy-box[data-theme~=light-border][data-placement^=left]>.tippy-svg-arrow>svg{left:11px}.tippy-box[data-theme~=light-border][data-placement^=left]>.tippy-svg-arrow:after{left:12px}.tippy-box[data-theme~=light-border][data-placement^=right]>.tippy-arrow:before{border-right-color:#fff;right:16px}.tippy-box[data-theme~=light-border][data-placement^=right]>.tippy-arrow:after{border-width:7px 7px 7px 0;right:17px;top:1px;border-right-color:rgba(0,8,16,.2)}.tippy-box[data-theme~=light-border][data-placement^=right]>.tippy-svg-arrow>svg{right:11px}.tippy-box[data-theme~=light-border][data-placement^=right]>.tippy-svg-arrow:after{right:12px}.tippy-box[data-theme~=light-border]>.tippy-svg-arrow{fill:#fff}.tippy-box[data-theme~=light-border]>.tippy-svg-arrow:after{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCA2czEuNzk2LS4wMTMgNC42Ny0zLjYxNUM1Ljg1MS45IDYuOTMuMDA2IDggMGMxLjA3LS4wMDYgMi4xNDguODg3IDMuMzQzIDIuMzg1QzE0LjIzMyA2LjAwNSAxNiA2IDE2IDZIMHoiIGZpbGw9InJnYmEoMCwgOCwgMTYsIDAuMikiLz48L3N2Zz4=);background-size:16px 6px;width:16px;height:6px}</style>
-<link href="data:text/css,%0A%3Aroot%20%7B%0A%2D%2Dquarto%2Dhl%2Dot%2Dcolor%3A%20%23003B4F%3B%0A%2D%2Dquarto%2Dhl%2Dat%2Dcolor%3A%20%23657422%3B%0A%2D%2Dquarto%2Dhl%2Dss%2Dcolor%3A%20%2320794D%3B%0A%2D%2Dquarto%2Dhl%2Dan%2Dcolor%3A%20%235E5E5E%3B%0A%2D%2Dquarto%2Dhl%2Dfu%2Dcolor%3A%20%234758AB%3B%0A%2D%2Dquarto%2Dhl%2Dst%2Dcolor%3A%20%2320794D%3B%0A%2D%2Dquarto%2Dhl%2Dcf%2Dcolor%3A%20%23003B4F%3B%0A%2D%2Dquarto%2Dhl%2Dop%2Dcolor%3A%20%235E5E5E%3B%0A%2D%2Dquarto%2Dhl%2Der%2Dcolor%3A%20%23AD0000%3B%0A%2D%2Dquarto%2Dhl%2Dbn%2Dcolor%3A%20%23AD0000%3B%0A%2D%2Dquarto%2Dhl%2Dal%2Dcolor%3A%20%23AD0000%3B%0A%2D%2Dquarto%2Dhl%2Dva%2Dcolor%3A%20%23111111%3B%0A%2D%2Dquarto%2Dhl%2Dbu%2Dcolor%3A%20inherit%3B%0A%2D%2Dquarto%2Dhl%2Dex%2Dcolor%3A%20inherit%3B%0A%2D%2Dquarto%2Dhl%2Dpp%2Dcolor%3A%20%23AD0000%3B%0A%2D%2Dquarto%2Dhl%2Din%2Dcolor%3A%20%235E5E5E%3B%0A%2D%2Dquarto%2Dhl%2Dvs%2Dcolor%3A%20%2320794D%3B%0A%2D%2Dquarto%2Dhl%2Dwa%2Dcolor%3A%20%235E5E5E%3B%0A%2D%2Dquarto%2Dhl%2Ddo%2Dcolor%3A%20%235E5E5E%3B%0A%2D%2Dquarto%2Dhl%2Dim%2Dcolor%3A%20%2300769E%3B%0A%2D%2Dquarto%2Dhl%2Dch%2Dcolor%3A%20%2320794D%3B%0A%2D%2Dquarto%2Dhl%2Ddt%2Dcolor%3A%20%23AD0000%3B%0A%2D%2Dquarto%2Dhl%2Dfl%2Dcolor%3A%20%23AD0000%3B%0A%2D%2Dquarto%2Dhl%2Dco%2Dcolor%3A%20%235E5E5E%3B%0A%2D%2Dquarto%2Dhl%2Dcv%2Dcolor%3A%20%235E5E5E%3B%0A%2D%2Dquarto%2Dhl%2Dcn%2Dcolor%3A%20%238f5902%3B%0A%2D%2Dquarto%2Dhl%2Dsc%2Dcolor%3A%20%235E5E5E%3B%0A%2D%2Dquarto%2Dhl%2Ddv%2Dcolor%3A%20%23AD0000%3B%0A%2D%2Dquarto%2Dhl%2Dkw%2Dcolor%3A%20%23003B4F%3B%0A%7D%0A%0A%3Aroot%20%7B%0A%2D%2Dquarto%2Dfont%2Dmonospace%3A%20SFMono%2DRegular%2C%20Menlo%2C%20Monaco%2C%20Consolas%2C%20%22Liberation%20Mono%22%2C%20%22Courier%20New%22%2C%20monospace%3B%0A%7D%0Apre%20%3E%20code%2EsourceCode%20%3E%20span%20%7B%0Acolor%3A%20%23003B4F%3B%0A%7D%0Acode%20span%20%7B%0Acolor%3A%20%23003B4F%3B%0A%7D%0Acode%2EsourceCode%20%3E%20span%20%7B%0Acolor%3A%20%23003B4F%3B%0A%7D%0Adiv%2EsourceCode%2C%0Adiv%2EsourceCode%20pre%2EsourceCode%20%7B%0Acolor%3A%20%23003B4F%3B%0A%7D%0Acode%20span%2Eot%20%7B%0Acolor%3A%20%23003B4F%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Eat%20%7B%0Acolor%3A%20%23657422%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ess%20%7B%0Acolor%3A%20%2320794D%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ean%20%7B%0Acolor%3A%20%235E5E5E%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Efu%20%7B%0Acolor%3A%20%234758AB%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Est%20%7B%0Acolor%3A%20%2320794D%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ecf%20%7B%0Acolor%3A%20%23003B4F%3B%0Afont%2Dweight%3A%20bold%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Eop%20%7B%0Acolor%3A%20%235E5E5E%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Eer%20%7B%0Acolor%3A%20%23AD0000%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ebn%20%7B%0Acolor%3A%20%23AD0000%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Eal%20%7B%0Acolor%3A%20%23AD0000%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Eva%20%7B%0Acolor%3A%20%23111111%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ebu%20%7B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Eex%20%7B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Epp%20%7B%0Acolor%3A%20%23AD0000%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ein%20%7B%0Acolor%3A%20%235E5E5E%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Evs%20%7B%0Acolor%3A%20%2320794D%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ewa%20%7B%0Acolor%3A%20%235E5E5E%3B%0Afont%2Dstyle%3A%20italic%3B%0A%7D%0Acode%20span%2Edo%20%7B%0Acolor%3A%20%235E5E5E%3B%0Afont%2Dstyle%3A%20italic%3B%0A%7D%0Acode%20span%2Eim%20%7B%0Acolor%3A%20%2300769E%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ech%20%7B%0Acolor%3A%20%2320794D%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Edt%20%7B%0Acolor%3A%20%23AD0000%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Efl%20%7B%0Acolor%3A%20%23AD0000%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Eco%20%7B%0Acolor%3A%20%235E5E5E%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ecv%20%7B%0Acolor%3A%20%235E5E5E%3B%0Afont%2Dstyle%3A%20italic%3B%0A%7D%0Acode%20span%2Ecn%20%7B%0Acolor%3A%20%238f5902%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Esc%20%7B%0Acolor%3A%20%235E5E5E%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Edv%20%7B%0Acolor%3A%20%23AD0000%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ekw%20%7B%0Acolor%3A%20%23003B4F%3B%0Afont%2Dweight%3A%20bold%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0A%2Eprevent%2Dinlining%20%7B%0Acontent%3A%20%22%3C%2F%22%3B%0A%7D%0A%0A" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="data:text/css,%0A%3Aroot%20%7B%0A%2D%2Dquarto%2Dhl%2Dot%2Dcolor%3A%20%23003B4F%3B%0A%2D%2Dquarto%2Dhl%2Dat%2Dcolor%3A%20%23657422%3B%0A%2D%2Dquarto%2Dhl%2Dss%2Dcolor%3A%20%2320794D%3B%0A%2D%2Dquarto%2Dhl%2Dan%2Dcolor%3A%20%235E5E5E%3B%0A%2D%2Dquarto%2Dhl%2Dfu%2Dcolor%3A%20%234758AB%3B%0A%2D%2Dquarto%2Dhl%2Dst%2Dcolor%3A%20%2320794D%3B%0A%2D%2Dquarto%2Dhl%2Dcf%2Dcolor%3A%20%23003B4F%3B%0A%2D%2Dquarto%2Dhl%2Dop%2Dcolor%3A%20%235E5E5E%3B%0A%2D%2Dquarto%2Dhl%2Der%2Dcolor%3A%20%23AD0000%3B%0A%2D%2Dquarto%2Dhl%2Dbn%2Dcolor%3A%20%23AD0000%3B%0A%2D%2Dquarto%2Dhl%2Dal%2Dcolor%3A%20%23AD0000%3B%0A%2D%2Dquarto%2Dhl%2Dva%2Dcolor%3A%20%23111111%3B%0A%2D%2Dquarto%2Dhl%2Dbu%2Dcolor%3A%20inherit%3B%0A%2D%2Dquarto%2Dhl%2Dex%2Dcolor%3A%20inherit%3B%0A%2D%2Dquarto%2Dhl%2Dpp%2Dcolor%3A%20%23AD0000%3B%0A%2D%2Dquarto%2Dhl%2Din%2Dcolor%3A%20%235E5E5E%3B%0A%2D%2Dquarto%2Dhl%2Dvs%2Dcolor%3A%20%2320794D%3B%0A%2D%2Dquarto%2Dhl%2Dwa%2Dcolor%3A%20%235E5E5E%3B%0A%2D%2Dquarto%2Dhl%2Ddo%2Dcolor%3A%20%235E5E5E%3B%0A%2D%2Dquarto%2Dhl%2Dim%2Dcolor%3A%20%2300769E%3B%0A%2D%2Dquarto%2Dhl%2Dch%2Dcolor%3A%20%2320794D%3B%0A%2D%2Dquarto%2Dhl%2Ddt%2Dcolor%3A%20%23AD0000%3B%0A%2D%2Dquarto%2Dhl%2Dfl%2Dcolor%3A%20%23AD0000%3B%0A%2D%2Dquarto%2Dhl%2Dco%2Dcolor%3A%20%235E5E5E%3B%0A%2D%2Dquarto%2Dhl%2Dcv%2Dcolor%3A%20%235E5E5E%3B%0A%2D%2Dquarto%2Dhl%2Dcn%2Dcolor%3A%20%238f5902%3B%0A%2D%2Dquarto%2Dhl%2Dsc%2Dcolor%3A%20%235E5E5E%3B%0A%2D%2Dquarto%2Dhl%2Ddv%2Dcolor%3A%20%23AD0000%3B%0A%2D%2Dquarto%2Dhl%2Dkw%2Dcolor%3A%20%23003B4F%3B%0A%7D%0A%0A%3Aroot%20%7B%0A%2D%2Dquarto%2Dfont%2Dmonospace%3A%20SFMono%2DRegular%2C%20Menlo%2C%20Monaco%2C%20Consolas%2C%20%22Liberation%20Mono%22%2C%20%22Courier%20New%22%2C%20monospace%3B%0A%7D%0Apre%20%3E%20code%2EsourceCode%20%3E%20span%20%7B%0Acolor%3A%20%23003B4F%3B%0A%7D%0Acode%20span%20%7B%0Acolor%3A%20%23003B4F%3B%0A%7D%0Acode%2EsourceCode%20%3E%20span%20%7B%0Acolor%3A%20%23003B4F%3B%0A%7D%0Adiv%2EsourceCode%2C%0Adiv%2EsourceCode%20pre%2EsourceCode%20%7B%0Acolor%3A%20%23003B4F%3B%0A%7D%0Acode%20span%2Eot%20%7B%0Acolor%3A%20%23003B4F%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Eat%20%7B%0Acolor%3A%20%23657422%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ess%20%7B%0Acolor%3A%20%2320794D%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ean%20%7B%0Acolor%3A%20%235E5E5E%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Efu%20%7B%0Acolor%3A%20%234758AB%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Est%20%7B%0Acolor%3A%20%2320794D%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ecf%20%7B%0Acolor%3A%20%23003B4F%3B%0Afont%2Dweight%3A%20bold%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Eop%20%7B%0Acolor%3A%20%235E5E5E%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Eer%20%7B%0Acolor%3A%20%23AD0000%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ebn%20%7B%0Acolor%3A%20%23AD0000%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Eal%20%7B%0Acolor%3A%20%23AD0000%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Eva%20%7B%0Acolor%3A%20%23111111%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ebu%20%7B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Eex%20%7B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Epp%20%7B%0Acolor%3A%20%23AD0000%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ein%20%7B%0Acolor%3A%20%235E5E5E%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Evs%20%7B%0Acolor%3A%20%2320794D%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ewa%20%7B%0Acolor%3A%20%235E5E5E%3B%0Afont%2Dstyle%3A%20italic%3B%0A%7D%0Acode%20span%2Edo%20%7B%0Acolor%3A%20%235E5E5E%3B%0Afont%2Dstyle%3A%20italic%3B%0A%7D%0Acode%20span%2Eim%20%7B%0Acolor%3A%20%2300769E%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ech%20%7B%0Acolor%3A%20%2320794D%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Edt%20%7B%0Acolor%3A%20%23AD0000%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Efl%20%7B%0Acolor%3A%20%23AD0000%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Eco%20%7B%0Acolor%3A%20%235E5E5E%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ecv%20%7B%0Acolor%3A%20%235E5E5E%3B%0Afont%2Dstyle%3A%20italic%3B%0A%7D%0Acode%20span%2Ecn%20%7B%0Acolor%3A%20%238f5902%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Esc%20%7B%0Acolor%3A%20%235E5E5E%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Edv%20%7B%0Acolor%3A%20%23AD0000%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0Acode%20span%2Ekw%20%7B%0Acolor%3A%20%23003B4F%3B%0Afont%2Dweight%3A%20bold%3B%0Afont%2Dstyle%3A%20inherit%3B%0A%7D%0A%2Eprevent%2Dinlining%20%7B%0Acontent%3A%20%22%3C%2F%22%3B%0A%7D%0A%0A" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script>/**
+ * reveal-header
+ * A filter that adds header text and logo.
+ * 
+ * MIT License
+ * Copyright (c) 2023-2024 Shafayet Khan Shafee.
+ */
+
+function header() {
+  
+  // add the header structure as the firstChild of div.reveal-header
+  function add_header() {
+    let header = document.querySelector("div.reveal-header");
+    let reveal = document.querySelector(".reveal");
+    reveal.insertBefore(header, reveal.firstChild);
+    
+    logo_img = document.querySelector('.header-logo img');
+    if (logo_img?.getAttribute('src') == null) {
+      if (logo_img?.getAttribute('data-src') != null) {
+        logo_img.src = logo_img?.getAttribute('data-src') || "";
+        logo_img?.removeAttribute('data-src'); 
+      };
+    };
+  };
+  
+  function linkify_logo(logo, href) {
+    const logo_cloned = logo.cloneNode(true);
+    const link = document.createElement('a');
+    link.href = href;
+    link.target = '_blank';
+    link.appendChild(logo_cloned);
+    logo.replaceWith(link);
+  };
+    
+  // add the class inverse-header for slide with has-dark-background class
+  // otherwise remove it.
+  function add_class(has_dark, header_paras) {
+    header_paras.forEach(el => {
+      el.classList.remove('inverse-header');
+      if(has_dark) {
+        el.classList.add('inverse-header');
+      };
+    });
+  };
+  
+  
+  // dynamically changing the header
+  function change_header(dheader, cheader, ctext) {
+    // dhead => dynamic header
+    // chead => constant header
+    // ctext => contstant header_text inner html
+    if (dheader !== null) {
+      cheader.innerHTML = dheader.innerHTML;  
+    } else {
+      cheader.innerHTML = ctext;
+    };
+  };
+  
+  function hide_from_title_slide(element) {
+      Reveal.on( 'slidechanged' , event => {
+        if (event.currentSlide.matches('#title-slide')) {
+          element.style.visibility = 'hidden';
+        } else {
+          element.style.visibility = 'visible';
+        }
+      });
+  };
+  
+  function get_clean_attrs(elem, attrName) {
+    let attrVal = elem.getAttribute(attrName);
+    if (attrVal != null) {
+     elem.removeAttribute(attrName); 
+    }
+    return attrVal;
+  };
+  
+  
+  if (Reveal.isReady()) {
+    
+    add_header();
+    
+    /*************** linkifying the header and footer logo ********************/
+    const header_logo = document.querySelector('div.header-logo');
+    if (header_logo != null) {
+      const header_logo_link = get_clean_attrs(header_logo, 'data-header-logo-link');
+      const footer_logo_link = get_clean_attrs(header_logo, 'data-footer-logo-link');
+      
+      if (header_logo_link != null) {
+        const header_logo_img = document.querySelector('div.header-logo').firstElementChild;
+        linkify_logo(header_logo_img, header_logo_link);
+      };
+      
+      if (footer_logo_link != null) {
+        const footer_logo_img = document.querySelector('.slide-logo');
+        footer_logo_img.setAttribute('style', "z-index:99;");
+        linkify_logo(footer_logo_img, footer_logo_link);
+      };
+    };
+    /****************************** END ***************************************/
+    
+    if (document.querySelector('div.reveal.has-logo') != null) {
+      var slide_number = document.querySelector('div.slide-number');
+      var header = document.querySelector("div.reveal-header");
+      header.appendChild(slide_number);
+    };
+  
+    // Get the default header text element and innner HTML (i.e. literal text)
+    var header_text = document.querySelector("div.header-text p");
+    const header_inner_html = header_text.innerHTML;
+    
+    var header_paras = document.querySelectorAll("div.reveal-header p");
+    var dark = Reveal.getCurrentSlide().classList.contains('has-dark-background');
+    add_class(dark, header_paras);
+    
+    Reveal.on( 'slidechanged', event => {
+      var has_dark = event.currentSlide.classList.contains('has-dark-background');
+      add_class(has_dark, header_paras);
+    });
+    
+    // make the visibility of slide specific header text defined in slide body none
+    document.querySelectorAll('div.header').forEach(el => {
+      el.style.display = 'none';
+    });
+    
+    
+    // change the header if currently loaded slide has the header div defined
+    // which won't be captured by slidechanged event unless we change slides.
+    let dynamic_header = Reveal.getCurrentSlide().querySelector('div.header p');
+    change_header(dynamic_header, header_text, header_inner_html);
+    
+    Reveal.on( 'slidechanged', event => {
+      let dyn_header = event.currentSlide.querySelector('div.header p');
+      change_header(dyn_header, header_text, header_inner_html);
+    });
+    
+    /************** header text in title slide if title or ***********************/
+    /*************  subtitle is used as header text        ***********************/
+    
+    var title_text = document.querySelector('.reveal-header .title-text p');
+    if (title_text != null) {
+      title_text.style.visibility = 'hidden';
+      hide_from_title_slide(title_text);
+    };
+    
+    /*************** hide header text and logo on title slide ********************/
+    
+    var hide_header_text = document.querySelector('.header-text').getAttribute('data-hide-from-titleslide');
+    var hide_header_logo = document.querySelector('.header-logo').getAttribute('data-hide-from-titleslide');
+    
+    if (hide_header_text == 'true') {
+      header_text.style.visibility = 'hidden';
+      hide_from_title_slide(header_text);
+    }
+    
+    if (hide_header_logo == 'true') {
+      logo_img.style.visibility = 'hidden';
+      hide_from_title_slide(logo_img);
+    } 
+    
+  }; 
+};
+
+
+window.addEventListener("load", (event) => {
+  header();
+});
+</script>
+<style type="text/css">
+:root {
+--header-font-size: max(10px, 1.4vw);
+--header-font-color: #898E8B;
+--header-margin: 0px 0px 0px 0px;
+
+}
+.reveal .reveal-header {
+top: 0;
+margin: 3.2px 0px 2px 0px;
+width: 100%;
+position: fixed;
+z-index: 5;
+
+}
+.reveal .reveal-header p {
+color: var(--header-font-color);
+text-align: center;
+margin: var(--header-margin);
+font-size: var(--header-font-size);
+}
+.reveal-header .sc-title p,
+.reveal-header .sb-title p {
+font-size: max(10px, 1.45vw);
+filter: brightness(0.85);
+}
+.reveal-header .sc-title p { float: left; margin-left: 0.5vw}
+.reveal-header .sb-title p { float: right; margin-right: 0.5vw}
+.reveal-header.no-logo .sc-title p {margin-left: 6vw}
+.reveal .header-logo svg,
+.reveal .header-logo img {
+margin: var(--header-margin);
+padding-left: 1vw;
+padding-top: 5px;
+height: 100%;
+width: auto;
+max-width: max(60px, 10vw);
+max-height: max(60px, 10vh);
+}
+
+.inverse-header { color: #c5d7ce !important;}
+div.slides section:not(.title-slide):not(#title-slide):not(.stack) {
+padding-top: 1em;
+}
+
+@media screen and (max-width: 600px) {
+.reveal .header-logo img {
+padding-top: 0px;
+margin: 0px 0px 5px 0px;
+}
+.reveal-header .sc-title p { margin-left: 1vw; }
+.reveal-header.no-logo .sc-title p {margin-left: 2vw; }
+div.reveal.has-logo div.slide-number { font-size: 10px; }
+}</style>
+<script>/**
+ * reveal-header
+ * A filter that adds header text and logo.
+ * 
+ * MIT License
+ * Copyright (c) 2023-2024 Shafayet Khan Shafee.
+ */
+ 
+ function add_sc_sb_title() {
+   
+   function get_title() {
+    var h1_arr = [];
+    var h2_arr = [];
+  
+    Reveal.getSlides().forEach(el => {
+      if (!el.matches('#title-slide')) {
+       var h1 = el.querySelector('.title-slide h1')?.innerText;
+       var h2 = el.querySelector('.title-slide h2')?.innerText;
+       h1_arr.push(h1);
+       h2_arr.push(h2);
+      };
+    });
+    
+    return [h1_arr, h2_arr]
+  };
+    
+  function fill_array(ar) {
+    let last_val = ar[0] || " ";
+    for (let i = 1; i < ar.length; i++) {
+      if (typeof ar[i] === 'undefined') {
+        ar[i] = last_val;
+      } else {
+        last_val = ar[i];
+      }
+    }
+    return ar
+  };
+  
+  
+  if (Reveal.isReady()) {
+  
+    if (document.querySelector('div.reveal-header img')?.getAttribute('src')?.length == 0) {
+      document.querySelector('div.reveal-header').classList.add('no-logo')
+    }
+  
+    var [h1_array, h2_array] = get_title();
+    var filled_h1_array = fill_array(h1_array);
+    var filled_h2_array = fill_array(h2_array);
+    
+    Reveal.getSlides().forEach((el, idx) => {
+      if (!el.matches('#title-slide')) {
+        el.setAttribute('data-sc-title', filled_h1_array[(idx - 1)])
+        el.setAttribute('data-sb-title', filled_h2_array[(idx - 1)])
+      }
+    });
+  
+    Reveal.on( 'slidechanged', event => {
+      let sp = Reveal.getSlidesElement().querySelector('.stack.present');
+      
+      if (sp != null) {
+        let header = document.querySelector("div.reveal-header");
+        
+        // handling h1 section title (`.sc-title`)
+        var section_text = event.currentSlide.getAttribute('data-sc-title') || " ";
+        if (event.currentSlide.matches('.title-slide.level1')) {
+          header.querySelector('.sc-title p').innerText = ""; 
+        } else if (event.currentSlide.matches('.title-slide.level2')) {
+          header.querySelector('.sc-title p').innerText = section_text;  
+        } else {
+          header.querySelector('.sc-title p').innerText = section_text;
+        };
+        
+        // handling h2 section title (`.sb-title`)
+        var sbsection_text = event.currentSlide.getAttribute('data-sb-title') || " ";
+        if (event.currentSlide.matches('.title-slide.level1')) {
+          header.querySelector('.sb-title p').innerText = "";
+        } else if (event.currentSlide.matches('.title-slide.level2')) {
+          header.querySelector('.sb-title p').innerText = "";
+        } else {
+          header.querySelector('.sb-title p').innerText = sbsection_text;
+        };
+      };
+    });
+  };
+};
+
+
+window.addEventListener("load", (event) => {
+  add_sc_sb_title();
+});
+
+
+
+</script>
+<style type="text/css">div.header-logo { grid-area: logo;}
+.no-logo div.header-logo { grid-area: unset !important; }
+div.sc-title { grid-area: sc;}
+div.header-text { grid-area: ht;}
+div.sb-title { grid-area: sb;}
+div.reveal.has-logo div.slide-number {
+grid-area: sn;
+top: unset !important;
+right: unset !important;
+bottom: unset !important;
+padding: 5px 5px 5px 5px;
+justify-self: center;
+
+font-size: 18px;
+}
+div.reveal-header {
+display: grid;
+grid-template-columns: 0.35fr 1.2fr 0.1fr 1.2fr 0.2fr;
+grid-template-areas: "logo sc ht sb sn";
+column-gap: 10px;
+align-items: center;
+}
+div.reveal-header.no-logo {
+grid-template-columns: 1fr 0.1fr 1fr 0.15fr;
+grid-template-areas: "sc ht sb sn";
+margin-top: 1.5vh;
+}
+
+@media screen and (max-width: 600px) {
+div.reveal-header {
+grid-template-columns: 0.2fr 1.2fr 0.1fr 1.2fr 0.4fr;
+grid-template-areas: "logo sc ht sb sn";
+}
+div.reveal-header.no-logo {
+grid-template-columns: 1fr 0.1fr 1fr 0.25fr;
+grid-template-areas: "sc ht sb sn";
+}
+.reveal-header .sc-title p { margin-left: 1vw; }
+.reveal-header.no-logo .sc-title p {margin-left: 2vw; }
+div.reveal.has-logo div.slide-number { font-size: 10px; }
+}</style><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.43">
 
   <meta name="dcterms.date" content="2025-05-07">
@@ -1002,9 +1358,73 @@ Miren Radia
 
   <p class="date">May 7, 2025</p>
 </section>
-<section id="introduction" class="title-slide slide level1 center">
+<section>
+<section id="introduction" class="title-slide slide level1 center" data-background-color="#40666e">
 <h1>Introduction</h1>
 
+</section>
+<section id="who-are-we" class="slide level2">
+<h2>Who are we?</h2>
+</section>
+<section id="what-is-numerical-relativity-nr" class="slide level2">
+<h2>What is Numerical Relativity (NR)?</h2>
+</section>
+<section id="common-methods" class="slide level2">
+<h2>Common methods</h2>
+</section>
+<section id="other-nr-codes" class="slide level2">
+<h2>Other NR codes</h2>
+</section></section>
+<section>
+<section id="grteclyn" class="title-slide slide level1 center" data-background-color="#40666e">
+<h1>GRTeclyn</h1>
+
+</section>
+<section id="the-grteclyn-code" class="slide level2">
+<h2>The GRTeclyn code</h2>
+</section>
+<section id="recent-development" class="slide level2">
+<h2>Recent development</h2>
+</section></section>
+<section>
+<section id="mhduet" class="title-slide slide level1 center" data-background-color="#40666e">
+<h1>MHDueT</h1>
+
+</section>
+<section id="the-mhduet-code" class="slide level2">
+<h2>The MHDueT code</h2>
+</section>
+<section id="recent-development-1" class="slide level2">
+<h2>Recent development</h2>
+</section></section>
+<section>
+<section id="future-work" class="title-slide slide level1 center" data-background-color="#40666e">
+<h1>Future work</h1>
+
+</section>
+<section id="particles" class="slide level2">
+<h2>Particles</h2>
+</section>
+<section id="uknr-ccp-benchmarking" class="slide level2">
+<h2>UKNR CCP Benchmarking</h2>
+</section></section>
+<section id="any-questions" class="title-slide slide level1 center" data-background-color="#40666e">
+<h1>Any questions?</h1>
+
+<div class="reveal-header">
+<div class="header-logo" data-footer-logo-link="https://events.linuxfoundation.org/hpsf-conference/">
+<img role="img" data-src>
+</div>
+<div class="sc-title">
+<p> </p>
+</div>
+<div class="header-text">
+<p> </p>
+</div>
+<div class="sb-title">
+<p> </p>
+</div>
+</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
