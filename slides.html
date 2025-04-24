@@ -1422,6 +1422,7 @@ Miren Radia
 <li><strong>Outgoing radiation (Sommerfeld)</strong></li>
 <li><strong>Symmetric/reflective</strong></li>
 <li><strong>Extrapolating</strong></li>
+<li>Multipatch approaches: separate (e.g. spherical) outer grids</li>
 </ul></li>
 </ul>
 </div></div>
@@ -1430,13 +1431,7 @@ Miren Radia
 <h2>NR codes</h2>
 <p>There are many NR codes/frameworks including (but by no means limited to):</p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="pseudo-spectraldg-codes">[Pseudo-]spectral/DG codes</h3>
-<ul>
-<li>SpEC/SpECTRE</li>
-<li>bamps</li>
-<li>SFINGE</li>
-</ul>
+<div class="column" style="width:30%;">
 <h3 id="oct-tree-amr">Oct-tree AMR</h3>
 <ul>
 <li>GRAthena++</li>
@@ -1444,7 +1439,18 @@ Miren Radia
 <li>Dendro-GR</li>
 <li>GRAMSES</li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:30%;">
+<h3 id="pseudo-spectraldg-codes">[Pseudo-]spectral/DG codes</h3>
+<ul>
+<li>SpEC/SpECTRE</li>
+<li>bamps</li>
+<li>SFINGE</li>
+</ul>
+<h3 id="other">Other</h3>
+<ul>
+<li>SENR/NRPy+</li>
+</ul>
+</div><div class="column" style="width:40%;">
 <h3 id="block-structured-amr">Block-structured AMR</h3>
 <ul>
 <li>Cactus/Einstein Toolkit<span class="math inline">\(^{\dagger}\)</span>
@@ -1467,11 +1473,47 @@ Miren Radia
 <h1>GRTeclyn</h1>
 
 </section>
-<section id="the-grteclyn-code" class="slide level2">
+<section id="the-grteclyn-code" class="slide level2 smaller">
 <h2>The GRTeclyn code</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>GRTeclyn is an in-development port of GRChombo (previously built on the Chombo libraries) to AMReX.</li>
+<li>“Teclyn” is Welsh for “tool”.</li>
+<li>Features
+<ul>
+<li><code>Amr</code> based</li>
+<li>Cell-centered but finite-difference rather than finite-volume
+<ul>
+<li>Fourth-order cell-centered interpolator from coarse to fine (<code>CellQuartic</code>)</li>
+<li>Fourth-order interpolation from fine to coarse</li>
+</ul></li>
+<li>Fourth-order Runge-Kutta time integration</li>
+<li>CCZ4 evolution equation (damped constraints violations) with the moving puncture gauge condition</li>
+<li>Currently, just <code>BinaryBH</code> example which evolves black-hole binaries.</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+
+</div></div>
 </section>
-<section id="recent-development" class="slide level2">
+<section id="recent-development" class="slide level2 smaller">
 <h2>Recent development</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>Tracking of the black-hole punctures</p>
+<ul>
+<li>Uses AMReX’s particle infrastructure</li>
+<li>Typically 2 BHs so just 2 puncture particles so maybe overkill</li>
+<li>Good experience for future particle use</li>
+</ul></li>
+<li><p>AMD MI300A hackathon</p></li>
+<li><p>Currently working on adding support for matter.</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+
+</div></div>
 </section></section>
 <section>
 <section id="mhduet" class="title-slide slide level1 center" data-background-color="#40666e">
