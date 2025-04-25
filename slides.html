@@ -1476,7 +1476,7 @@ Miren Radia
 <section id="the-grteclyn-code" class="slide level2 smaller">
 <h2>The GRTeclyn code</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:60%;">
 <ul>
 <li>GRTeclyn is an in-development port of GRChombo (previously built on the Chombo libraries) to AMReX.</li>
 <li>“Teclyn” is Welsh for “tool”.</li>
@@ -1489,7 +1489,7 @@ Miren Radia
 <li>Fourth-order interpolation from fine to coarse</li>
 </ul></li>
 <li>Fourth-order Runge-Kutta time integration</li>
-<li>CCZ4 evolution equation (damped constraints violations) with the moving puncture gauge condition</li>
+<li>CCZ4 evolution equations (damped constraints violations) with the moving puncture gauge condition</li>
 <li>Currently, just <code>BinaryBH</code> example which evolves black-hole binaries.</li>
 </ul></li>
 </ul>
@@ -1502,14 +1502,20 @@ Miren Radia
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li><p>Tracking of the black-hole punctures</p>
+<li>Black-hole puncture tracking.
 <ul>
+<li>Allows us to track the “centres” of black hole during the simulation</li>
 <li>Uses AMReX’s particle infrastructure</li>
 <li>Typically 2 BHs so just 2 puncture particles so maybe overkill</li>
 <li>Good experience for future particle use</li>
 </ul></li>
-<li><p>AMD MI300A hackathon</p></li>
-<li><p>Currently working on adding support for matter.</p></li>
+<li>AMD MI300A hackathon
+<ul>
+<li>Lots of variables so high register pressure in RHS kernels</li>
+<li>Legacy complicated data structure from GRChombo increases this</li>
+<li>Refactoring led to a ~2x speedup in RHS kernels (~40% overall) on AMD MI300A APUs.</li>
+</ul></li>
+<li>Currently working on adding support for basic matter.</li>
 </ul>
 </div><div class="column" style="width:50%;">
 
@@ -1520,11 +1526,41 @@ Miren Radia
 <h1>MHDueT</h1>
 
 </section>
-<section id="the-mhduet-code" class="slide level2">
+<section id="the-mhduet-code" class="slide level2 smaller">
 <h2>The MHDueT code</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>MHDueT is a code that is automatically generated using the Simflowny infrastructure.</li>
+<li>Previously used the SAMRAI library.</li>
+<li>Features
+<ul>
+<li><code>AmrCore</code> based.</li>
+<li>Mostly node-centered
+<ul>
+<li>Fifth order polynomial interpolation from coarse to fine</li>
+</ul></li>
+<li>Custom fourth order Runga-Kutta time integration</li>
+<li>Supports Magnetohydrodynamics (MHD)
+<ul>
+<li>High resolution shock capturing with WENO reconstruction</li>
+<li>Arbitrary EOS via HDF5 tabulated input</li>
+</ul></li>
+<li>CCZ4 evolution equations with moving puncture gauge conditions</li>
+<li>Can simulate binaries of boson stars, neutron stars, black holes and more.</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+
+</div></div>
 </section>
 <section id="recent-development-1" class="slide level2">
 <h2>Recent development</h2>
+<ul>
+<li>Addition of nodal syncing when filling boundary nodes to prevent instability (only appeared on GPUs)</li>
+<li>Refactoring of custom higher-order extrapolating BCs to speed up these loops ~3000x on Nvidia A100 GPUs</li>
+<li>Reimplementation of reduction calculation to use AMReX functions rather than a custom version ported from SAMRAI (which had several issues)</li>
+</ul>
 </section></section>
 <section>
 <section id="future-work" class="title-slide slide level1 center" data-background-color="#40666e">
