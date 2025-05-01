@@ -132,7 +132,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
+<section id="title-slide" data-background-image="media/nr-amrex-fade.png" data-background-opacity="80%" data-background-position="right" data-background-size="contain" class="quarto-title-block center">
   <h1 class="title">Numerical Relativity with AMReX</h1>
   <p class="subtitle">AMReX Community Breakout, HPSF Conference 2025</p>
 
@@ -150,7 +150,7 @@ Miren Radia
   <p class="date">May 7, 2025</p>
 </section>
 <section>
-<section id="introduction" class="title-slide slide level1 center" data-background-color="#40666e">
+<section id="introduction" class="title-slide slide level1 center" data-background-color="#40666e" data-background-image="media/nr-amrex-fade.png" data-background-size="contain" data-background-position="right">
 <h1>Introduction</h1>
 
 </section>
@@ -164,7 +164,7 @@ Miren Radia
 <div class="columns">
 <div class="column" style="width:40%;">
 <h3 id="grteclyn">GRTeclyn</h3>
-<div class="quarto-layout-panel" style="text-align:center;" data-layout-nrow="2">
+<div class="quarto-layout-panel" data-layout-nrow="2" style="text-align:center;">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-left">
@@ -220,7 +220,7 @@ Miren Radia
 </div>
 </div><div class="column" style="width:20%;">
 <h3 id="mhduet">MHDueT</h3>
-<div class="quarto-layout-panel" style="text-align:center;" data-layout-nrow="2">
+<div class="quarto-layout-panel" data-layout-nrow="2" style="text-align:center;">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
@@ -244,7 +244,7 @@ Miren Radia
 </div>
 </div><div class="column" style="width:40%;">
 <h3 id="uknr-ccp"><a href="http://www.uknumericalrelativity.org/">UKNR</a> CCP</h3>
-<div class="quarto-layout-panel" style="text-align:center;" data-layout-nrow="2">
+<div class="quarto-layout-panel" data-layout-nrow="2" style="text-align:center;">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-left">
@@ -307,7 +307,8 @@ Miren Radia
 </ul>
 </div><div class="column" style="width:50%;">
 <iframe data-external="1" src="https://www.youtube.com/embed/mgr7W-5o1Og?si=eYS-YKclG015d0-Y?start=15" width="480" height="270" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-<p><img data-src="media/bbh-strain-plot.svg" class="absolute" style="left: 525px; bottom: 7px; width: 480px; "></p>
+<p><img data-src="media/bbh-strain-plot.svg" class="absolute" style="left: 525px; bottom: 7px; width: 480px; " alt="A plot showing a mode of the strain (spacetime distortion) calculated from a binary black-hole simulation"><br>
+</p>
 </div></div>
 </section>
 <section id="common-methods" class="slide level2 smaller">
@@ -396,7 +397,7 @@ Miren Radia
 <p><span class="math inline">\({\dagger}\)</span> denotes codes/frameworks that are either transitioning to or developing support for using AMReX.</p>
 </section></section>
 <section>
-<section id="grteclyn-1" class="title-slide slide level1 center" data-background-color="#40666e">
+<section id="grteclyn-1" class="title-slide slide level1 center" data-background-color="#40666e" data-background-image="media/nr-amrex-fade.png" data-background-size="contain" data-background-position="right">
 <h1>GRTeclyn</h1>
 
 </section>
@@ -422,7 +423,8 @@ Miren Radia
 </ul>
 </div><div class="column" style="width:50%;">
 <video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="media/grteclyn-grchombo-bbh-comparison.mp4"></video>
-<p><img data-src="media/grteclyn-benchmarks.svg"></p>
+<p><img data-src="media/grteclyn-benchmarks.svg" alt="A bar chart showing the mean walltime taken to evolve a single timestep on various different GPUs and a CPU. The results are as follows: Intel Xeon Platinum 8480 CPU (480s), Nvidia GH200 GPU (56s), AMD MI300X GPU (76s), AMD MI210 GPU (358s), Nvidia A100 GPU (105s) and Intel PVC 1550 (176s)."><br>
+</p>
 </div></div>
 </section>
 <section id="recent-development" class="slide level2 smaller">
@@ -447,13 +449,15 @@ Miren Radia
 </ul>
 </div><div class="column" style="width:50%;">
 <div style="text-align: center">
-<p><img data-src="media/punctures.svg" height="320"></p>
-<p><img data-src="media/mi300-hackathon-results.svg"></p>
+<p><img data-src="media/punctures.svg" height="320" alt="A plot showing the trajectories of the two punctures in a binary black-hole simulation. The punctures spiral inwards and complete ~10 orbits before merging"><br>
+</p>
+<p><img data-src="media/mi300-hackathon-results.svg" alt="A bar chart showing the mean walltime to run a benchmark with the BinaryBH example on an AMD MI300A APU. There are 2 bars, one for before refactoring (103s) and one for after refactoring (60s)"><br>
+</p>
 </div>
 </div></div>
 </section></section>
 <section>
-<section id="mhduet-1" class="title-slide slide level1 center" data-background-color="#40666e">
+<section id="mhduet-1" class="title-slide slide level1 center" data-background-color="#40666e" data-background-image="media/nr-amrex-fade.png" data-background-size="contain" data-background-position="right">
 <h1>MHDueT</h1>
 
 </section>
@@ -483,8 +487,10 @@ Miren Radia
 </ul>
 </div><div class="column" style="width:40%;">
 <div style="text-align: center">
-<p><img data-src="media/mhduet-logo.png" height="250"></p>
-<p><img data-src="media/mhduet-jetformation.png"></p>
+<p><img data-src="media/mhduet-logo.png" height="250" alt="MHDueT logo"><br>
+</p>
+<p><img data-src="media/mhduet-jetformation.png" alt="A visualization of the formation of magnetically dominated jets in hypermassive neutron stars produced by a binary merger simulated using MHDueT."><br>
+</p>
 </div>
 </div></div>
 </section>
@@ -498,12 +504,14 @@ Miren Radia
 </ul>
 </section></section>
 <section>
-<section id="future-work" class="title-slide slide level1 center" data-background-color="#40666e">
+<section id="future-work" class="title-slide slide level1 center" data-background-color="#40666e" data-background-image="media/nr-amrex-fade.png" data-background-size="contain" data-background-position="right">
 <h1>Future work</h1>
 
 </section>
-<section id="particles" class="slide level2">
+<section id="particles" class="slide level2 smaller">
 <h2>Particles</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li>Extend “diagnostic” particles in GRTeclyn to allow high-order interpolation of state variables at arbitrary points in the domain for use with
 <ul>
@@ -518,6 +526,10 @@ Miren Radia
 <li>Port this feature to AMReX version.</li>
 </ul></li>
 </ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="media/gw-extraction-sphere-particles.png" alt="An AI generated visualization of a sphere of particles enclosing a black-hole binary emitting gravitational waves."><br>
+</p>
+</div></div>
 </section>
 <section id="uknr-collaborative-computational-project" class="slide level2">
 <h2>UKNR Collaborative Computational Project</h2>
@@ -532,7 +544,7 @@ Miren Radia
 </ul></li>
 </ul>
 </section></section>
-<section id="any-questions" class="title-slide slide level1 center" data-background-color="#40666e">
+<section id="any-questions" class="title-slide slide level1 center" data-background-color="#40666e" data-background-image="media/nr-amrex-fade.png" data-background-size="contain" data-background-position="right">
 <h1>Any questions?</h1>
 <div class="header">
 
